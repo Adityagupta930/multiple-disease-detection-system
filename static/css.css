@@ -1,0 +1,446 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #0077b6;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    padding: 25px;
+}.navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+li{
+    margin-top: 10px;
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 40px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+
+    /* overflow: hidden; */
+ 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #0077b6;
+    padding: 15px 25px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 2px solid white;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f0f0f0;
+}
+
+.nav-links li a:hover::before {
+    width: 100%;
+}
+
+/* Add some creative animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.logo {
+    animation: slideInFromLeft 1s ease;
+}
+
+.nav-links {
+    animation: slideInFromRight 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    display: flex;
+    /* margin-top: 140px; */
+    padding: 80px;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    height: 650px;
+    /* border: 2px solid red; */
+    background-color: #0077b6;
+    /* word-wrap:break-word ; */
+    flex-wrap: nowrap;
+
+}
+.main .text{
+    /* border: 2px solid black; */
+    text-align: center;
+    height: 600px;
+    width: 1000px;
+    /* padding-top: 550px; */
+    /* display: flex; */
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 50px;
+    justify-content: center;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+    15px 15px 15px rgba(0,0,0,0.1),
+    inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1);
+    
+}
+
+img{
+    height: 600px;
+    width: 600px;
+    border-radius: 25px;   
+}
+.h11{
+    margin-top: 150px;
+    margin: 100px;
+}
+.h12{
+    margin: 100px;
+}
+section{
+    height: 950px;
+    width: 100%;
+    text-align: center;
+}
+.service {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly   ;
+    align-items: center;
+}
+    /* }
+.service img{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+} */
+section h1{
+    font-size: 50px;
+    padding-top: 10px;
+}
+.diabetes{
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+    height: 250px;
+    width: 250px;
+}
+.diabetes img {
+    padding: 10px;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space between icon and text */
+}
+.covid{
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+    height: 250px;
+    width: 250px;
+}
+.covid img {
+    padding: 10px;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space between icon and text */
+}
+.lungs{
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+    height: 250px;
+    width: 250px;
+}
+.lungs img {
+    padding: 10px;
+    width: 150px; 
+    height: 150px; 
+    margin-bottom: 10px; 
+}
+.heart{
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+    height: 250px;
+    width: 250px;
+}
+
+.heart img {
+    padding: 10px;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 22px; 
+    font-weight: bold; 
+}
+.service a {
+    text-decoration: none;
+}
+/* }
+.pama{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+.pama{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+.ma{
+    width: 70%;
+}
+.pa{
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    /* tex */
+}
+.about p{
+    font-size: 20px;
+}
+.about #p1{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+.about ul li{
+    font-size: 20px;
+}
+.pa ul li{
+    /* text-decoration: none; */
+    list-style-type: none;
+}
+
+.ma{
+    /* border: 2px solid black; */
+    text-align: center;
+
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 10px;
+    justify-content: center;
+    /* box-shadow: ; */
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+    15px 15px 15px rgba(0,0,0,0.1),
+    inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1);
+    
+}
+.pa{
+    /* border: 2px solid black; */
+    padding: 0px;
+    text-align: center;
+    /* height: 600px; */
+    /* width: 1000px; */
+    /* padding-top: 550px; */
+    /* display: flex; */
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 10px;
+    justify-content: center;
+    /* box-shadow: ; */
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+    15px 15px 15px rgba(0,0,0,0.1),
+    inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1);
+    text-align: justify;
+    
+}
+footer {
+    height: 80px;
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .social-icon {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: rotate(360deg);
+    filter: brightness(1.2);
+}
+
+/* Copyright Text */
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.footer-container .social-icon a {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Hover Effects */
+.footer-container .social-icon a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-container .social-icon a:hover {
+    text-decoration: none;
+}
+
+/* Animation for Footer */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-container .social-icon,
+.copyright {
+    animation: fadeInUp 1s forwards;
+}

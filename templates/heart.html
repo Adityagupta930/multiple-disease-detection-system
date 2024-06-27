@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/diabetis.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">AI Vision</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Diseases</a></li>
+                <li><a href="/symptom">Symptoms</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1 id="h1">Heart</h1>
+        <p>Heart disease is a general term that includes many types of heart problems. It's also called cardiovascular
+            disease, which means heart and blood vessel disease. Heart disease is the leading cause of death in the
+            United States, but there are ways to prevent and manage many types of heart disease.
+        </p>
+
+        <h1>Symptoms</h1>
+        <p>
+            Chest pain or discomfort <br>
+            Shortness of breath <br>
+            Fatigue <br>
+            Palpitations <br>
+            Dizziness or lightheadedness <br>
+            Swelling (edema) <br>
+            Nausea or indigestion <br>
+            Cold sweats <br>
+        </p>
+        <h1>Precautions</h1>
+        <p>
+            Persistent cough. <br>
+            Coughing up blood. <br>
+            Chest pain. <br>
+            Shortness of breath. <br>
+            Wheezing. <br>
+            Hoarseness. <br>
+            Unexplained weight loss. <br>
+            Fatigue. <br>
+            Loss of appetite. <br>
+        </p>
+    </div>
+    <form action="/submit_heart" method="POST">
+        <div class="container">
+            <h2>Patient Details</h2>
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sex:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="sex" value="1">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="sex" value="0">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="mob">Mobile no.:</label>
+                        <input type="tel" id="mob" name="mob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="chest_pain_types">Chest Pain Types:</label>
+                        <input type="number" id="chest_pain_types" name="chest_pain_types" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resting_bp">Resting blood pressure level:</label>
+                        <input type="number" id="resting_bp" name="resting_bp" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="serum_cholesterol">Serum cholesterol level:</label>
+                        <input type="number" id="serum_cholesterol" name="serum_cholesterol" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fasting_blood_sugar">Fasting blood sugar >120mg/dl:</label>
+                        <input type="number" id="fasting_blood_sugar" name="fasting_blood_sugar" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resting_ecg">Resting Electrocardiographic results:</label>
+                        <input type="number" id="resting_ecg" name="resting_ecg" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="max_heart_rate">Maximum Heart Rate Achieved:</label>
+                        <input type="number" id="max_heart_rate" name="max_heart_rate" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="st_depression">ST depression induced by exercise:</label>
+                        <input type="number" id="st_depression" name="st_depression" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="st_slope">Slope of the peak exercise ST segment:</label>
+                        <input type="number" id="st_slope" name="st_slope" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="major_vessels">Major vessels colored by fluoroscopy:</label>
+                        <input type="number" id="major_vessels" name="major_vessels" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="thalassemia">Thalassemia: 0=normal; 1=Defect:</label>
+                        <input type="number" id="thalassemia" name="thalassemia" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="exercise_angina">Exercise Induced Angina:</label>
+                        <input type="number" id="exercise_angina" name="exercise_angina" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icon">
+                <a href="https://www.facebook.com/YourPage" target="_blank"><img src="../pictures/facebook.jpg"
+                        alt="Facebook"></a>
+                <a href="https://www.linkedin.com/company/your-company" target="_blank"><img
+                        src="../pictures/linkedin.jpg" alt="LinkedIn"></a>
+                <a href="https://twitter.com/YourTwitterHandle" target="_blank"><img src="../pictures/x.jpg"
+                        alt="Twitter"></a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="color: white;">&copy; 2024 AIVision. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

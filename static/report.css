@@ -1,0 +1,41 @@
+body{
+    background-color:white;
+    /* color: white; */
+}
+.maincontainer{
+    border:1px solid black;
+    margin: 2% 10% 2% 10%;
+    height:90vh;
+    padding:8px;
+    background-color: #0077b6
+ 
+
+}
+.report p{
+    text-align: center;
+    font-size: 40px;
+}
+.foot{
+  display: flex;
+  flex-direction:row-reverse;
+}
+.container{
+    
+    width:60%;
+    font-size:20px;
+    padding:8px;
+    margin-left:5%;
+   
+}
+.patient p{
+    background-color: rgb(205, 235, 250);
+    padding:8px;
+    font:600;
+}
+.res{
+    text-align: center;
+    font-size: 25px;
+}
+.foot p{
+    font-size: 23px;
+}

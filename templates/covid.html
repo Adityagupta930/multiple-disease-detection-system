@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/diabetis.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">AI Vision</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Diseases</a></li>
+                <li><a href="/symptom">Symptoms</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1 id="h1">Covid</h1>
+        <p>Cancer is a disease in which cells in the body grow out of control. When cancer starts in the lungs, it is
+            called lung cancer. Lung cancer begins in the lungs and may spread to lymph nodes or other organs in the
+            body, such as the brain. Cancer from other organs also may spread to the lungs. When cancer cells spread
+            from one organ to another, they are called metastases.
+        </p>
+
+        <h1>Symptoms</h1>
+        <p>
+            Fever or chills <br>
+            Cough <br>
+            Shortness of breath <br>
+            Tiredness <br>
+            body aches <br>
+            Headaches <br>
+        </p>
+        <h1>Precautions</h1>
+        <p>
+            PWash your hands for at least 20 seconds — especially before eating and preparing food, after using the
+            bathroom, after wiping your nose, and after coming in contact with someone who has a cold. <br>
+
+            Wear a multilayered cloth facemask that fits snugly on your face and covers your mouth, nose and chin as
+            recommended by the CDC. <br>
+
+            Avoid touching your eyes, nose and mouth to prevent the spread of viruses from your hands. <br>
+
+            Cover your mouth and nose with a tissue when sneezing and coughing or sneeze and cough into your sleeve.
+            Throw the tissue in the trash. Wash your hands afterward. Never cough or sneeze into your hands! <br>
+
+            Avoid close contact (within 6 feet) with those who have coughs, colds or are sick. Stay home if you’re sick.
+            <br>
+
+            Use hand sanitizers that contain at least 60% alcohol if soap and water are not available. <br>
+
+            Get enough sleep, eat a healthy diet, drink plenty of liquids and exercise if you are able. These steps will
+            strengthen your immune system and help you fight off infections more easily. <br>
+        </p>
+    </div>
+    <form action="/submit_covid" method="POST">
+        <div class="container">
+            <h2>Patient Details</h2>
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sex:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="sex" value="2">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="sex" value="1">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="mob">Mobile no.:</label>
+                        <input type="tel" id="mob" name="mob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Breathing Problem:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="breathing-problem-yes" name="breathing_problem" value="2">
+                            <label for="breathing-problem-yes">Yes</label>
+                            <input type="radio" id="breathing-problem-no" name="breathing_problem" value="1">
+                            <label for="breathing-problem-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Fever:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="fever-yes" name="fever" value="2">
+                            <label for="fever-yes">Yes</label>
+                            <input type="radio" id="fever-no" name="fever" value="1">
+                            <label for="fever-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Dry Cough:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="dry-cough-yes" name="dry_cough" value="2">
+                            <label for="dry-cough-yes">Yes</label>
+                            <input type="radio" id="dry-cough-no" name="dry_cough" value="1">
+                            <label for="dry-cough-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Sore Throat:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="sore-throat-yes" name="sore_throat" value="2">
+                            <label for="sore-throat-yes">Yes</label>
+                            <input type="radio" id="sore-throat-no" name="sore_throat" value="1">
+                            <label for="sore-throat-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Running Nose:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="running-nose-yes" name="running_nose" value="2">
+                            <label for="running-nose-yes">Yes</label>
+                            <input type="radio" id="running-nose-no" name="running_nose" value="1">
+                            <label for="running-nose-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Asthma:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="asthma-yes" name="asthma" value="2">
+                            <label for="asthma-yes">Yes</label>
+                            <input type="radio" id="asthma-no" name="asthma" value="1">
+                            <label for="asthma-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Chronic Lung Disease:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="chronic-lung-disease-yes" name="chronic_lung_disease" value="2">
+                            <label for="chronic-lung-disease-yes">Yes</label>
+                            <input type="radio" id="chronic-lung-disease-no" name="chronic_lung_disease" value="1">
+                            <label for="chronic-lung-disease-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Headache:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="headache-yes" name="headache" value="2">
+                            <label for="headache-yes">Yes</label>
+                            <input type="radio" id="headache-no" name="headache" value="1">
+                            <label for="headache-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Heart Disease:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="heart-disease-yes" name="heart_disease" value="2">
+                            <label for="heart-disease-yes">Yes</label>
+                            <input type="radio" id="heart-disease-no" name="heart_disease" value="1">
+                            <label for="heart-disease-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Diabetes:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="diabetes-yes" name="diabetes" value="2">
+                            <label for="diabetes-yes">Yes</label>
+                            <input type="radio" id="diabetes-no" name="diabetes" value="1">
+                            <label for="diabetes-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Hyper Tension:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="hyper-tension-yes" name="hyper_tension" value="2">
+                            <label for="hyper-tension-yes">Yes</label>
+                            <input type="radio" id="hyper-tension-no" name="hyper_tension" value="1">
+                            <label for="hyper-tension-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Fatigue:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="fatigue-yes" name="fatigue" value="2">
+                            <label for="fatigue-yes">Yes</label>
+                            <input type="radio" id="fatigue-no" name="fatigue" value="1">
+                            <label for="fatigue-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Gastrointestinal:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="gastrointestinal-yes" name="gastrointestinal" value="2">
+                            <label for="gastrointestinal-yes">Yes</label>
+                            <input type="radio" id="gastrointestinal-no" name="gastrointestinal" value="1">
+                            <label for="gastrointestinal-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Abroad Travel:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="abroad-travel-yes" name="abroad_travel" value="2">
+                            <label for="abroad-travel-yes">Yes</label>
+                            <input type="radio" id="abroad-travel-no" name="abroad_travel" value="1">
+                            <label for="abroad-travel-no">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Contact with COVID Patient:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="covid-contact-yes" name="covid_contact" value="2">
+                            <label for="covid-contact-yes">Yes</label>
+                            <input type="radio" id="covid-contact-no" name="covid_contact" value="1">
+                            <label for="covid-contact-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Attended Large Gathering:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="large-gathering-yes" name="large_gathering" value="2">
+                            <label for="large-gathering-yes">Yes</label>
+                            <input type="radio" id="large-gathering-no" name="large_gathering" value="1">
+                            <label for="large-gathering-no">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Visited Public Exposed Places:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="public-places-yes" name="public_places" value="2">
+                            <label for="public-places-yes">Yes</label>
+                            <input type="radio" id="public-places-no" name="public_places" value="1">
+                            <label for="public-places-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Family Working in Public Exposed Places:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="family-public-places-yes" name="family_public_places" value="2">
+                            <label for="family-public-places-yes">Yes</label>
+                            <input type="radio" id="family-public-places-no" name="family_public_places" value="1">
+                            <label for="family-public-places-no">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" value="submit" class="submit">Submit</button>
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icon">
+                <a href="https://www.facebook.com/YourPage" target="_blank"><img src="../static/pictures/facebook.jpg"
+                        alt="Facebook"></a>
+                <a href="https://www.linkedin.com/company/your-company" target="_blank"><img
+                        src="../static/pictures/linkedin.jpg" alt="LinkedIn"></a>
+                <a href="https://twitter.com/YourTwitterHandle" target="_blank"><img src="../static/pictures/x.jpg"
+                        alt="Twitter"></a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="color: white;">&copy; 2024 AIVision. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

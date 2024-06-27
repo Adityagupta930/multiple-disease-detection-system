@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='report.css') }}">
+    <link rel="icon" href='../static/pictures/doc.jpg'>
+
+    <title>Report card</title>
+</head>
+
+<body>
+    <div class="maincontainer">
+
+
+        <div class="report">
+            <p>Report-Card</p>
+        </div>
+        <form action="">
+            <div class="container">
+                <div class="patient">
+                    <p>Patient Name:{{names_ans}}</p>
+                    <p>Sex:{{sex_ans}}</p>
+
+                </div>
+
+
+                <div class="patient">
+                    <p>DOB:{{dob_ans}} </p>
+                    <p>Age:{{age_ans}}</p>
+                </div>
+                <div class="patient">
+                    <p>Mobile NO:{{mobile_ans}} </p>
+                    <p>Date:{{date_ans}}</p>
+                </div>
+                <div class="patient">
+                    <p>Address:{{address_ans}}</p>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <p class="res">{{res_ans}}</p>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/diabetis.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">AI Vision</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Diseases</a></li>
+                <li><a href="/symptom">Symptoms</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <header> -->
+    <div class="heading">
+        <h1 id="h1">Diabetis</h1>
+        <p>Diabetes is a disease that affects your body’s ability to produce or use insulin. Insulin is a hormone. When
+            your body turns the food you eat into energy (also called sugar or glucose), insulin is released to help
+            transport this energy to the cells. Insulin acts as a “key.” Its chemical message tells the cell to open and
+            receive glucose. If you produce little or no insulin, or are insulin resistant, too much sugar remains in
+            your blood. Blood glucose levels are higher than normal for individuals with diabetes. There are two main
+            types of diabetes: Type 1 and Type 2.
+        </p>
+        <h1>Type 1 diabetis</h1>
+        <p>When you are affected with Type 1 diabetes, your pancreas does not produce insulin. Type 1 diabetes, once
+            called juvenile diabetes, is often diagnosed in children or teens. However, it can also occur in adults.
+            This type accounts for 5-10 percent of people with diabetes.</p>
+
+        <h1>Type 2 diabetis</h1>
+        <p>Type 2 diabetes occurs when the body does not produce enough insulin, or when the cells are unable to use
+            insulin properly, which is called insulin resistance. Type 2 diabetes is commonly called “adult-onset
+            diabetes” since it is diagnosed later in life, generally after the age of 45. It accounts for 90-95 percent
+            of people with diabetes. In recent years, Type 2 diabetes has been diagnosed in younger people, including
+            children, more frequently than in the past.
+
+        </p>
+        <h1>Causes</h1>
+        <p>Genetics, lifestyle and environment can be causes of diabetes. Eating an unhealthy diet, being overweight or
+            obese and not exercising enough may play a role in developing diabetes, particularly Type 2 diabetes. Type 1
+            diabetes is caused by an autoimmune response. The body’s immune system attacks and destroys the insulin
+            producing beta cells in the pancreas.</p>
+        <h1>Symptoms</h1>
+        <p>
+            Extreme thirst <br>
+            Frequent urination <br>
+            Blurry vision <br>
+            Extreme hunger <br>
+            Increased tiredness <br>
+            Unusual weight loss <br>
+        </p>
+    </div>
+
+    <form action="/submit_diabetis" method="POST">
+        <div class="container">
+            <h2>Patient Details</h2>
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sex:</label>
+                        <!-- <div class="radio-group">
+                            <input type="radio" id="male" name="sex" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="sex" value="Female">
+                            <label for="female">Female</label>
+                        </div> -->
+                        <div for="Sex" class="label" id="ho1">
+                            Sex:
+                            <input type="radio" id="Sex" name="Sex" value="Male" required> Male
+                            <input type="radio" id="Sex" name="Sex" value="Female" required> Female
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="mob">Mobile no.:</label>
+                        <input type="tel" id="mob" name="mob" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pg">Pregnancy:</label>
+                        <input type="number" id="pg" name="pg" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gl">Glucose Level:</label>
+                        <input type="number" id="gl" name="gl" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bp">Blood Pressure:</label>
+                        <input type="number" id="bp" name="bp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="skinthickness">Skin Thickness:</label>
+                        <input type="number" id="skinthickness" name="skinthickness" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="insulin">Insulin:</label>
+                        <input type="number" id="insulin" name="insulin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bmi">BMI:</label>
+                        <input type="number" id="bmi" name="bmi" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dp">Diabetes Pedigree:</label>
+                        <input type="number" id="dp" name="dp" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" value="submit" class="submit">Submit</button>
+        </div>
+    </form>
+    <!-- {% if prediction %}
+    <h2>Prediction Result:</h2>
+    <p>{{ prediction }}</p>
+    {% endif %} -->
+    </header>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icon">
+                <a href="https://www.facebook.com/YourPage" target="_blank"><img src="../static/pictures/facebook.jpg"
+                        alt="Facebook"></a>
+                <a href="https://www.linkedin.com/company/your-company" target="_blank"><img
+                        src="../static/pictures/linkedin.jpg" alt="LinkedIn"></a>
+                <a href="https://twitter.com/YourTwitterHandle" target="_blank"><img src="../static/pictures/x.jpg"
+                        alt="Twitter"></a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="color: white;">&copy; 2024 AIVision. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
